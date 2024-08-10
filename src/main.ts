@@ -54,7 +54,7 @@ function renderNewTodo(todo: Todo) {
   const deleteButton = document.createElement('button')
   deleteButton.classList.add('delete-btn')
   deleteButton.innerText = 'Delete'
-  deleteButton.addEventListener('click', (e)=> {
+  deleteButton.addEventListener('click', ()=> {
     listItem.remove()
     todos = todos.filter(t => t.id !== todo.id)
     saveTodos()
